@@ -1,0 +1,11 @@
+<h1>Hi</h1>
+
+<% if (user_signed_in?) %>
+<%= link_to "sign out", destroy_user_session_path , method: :delete %>
+<%= link_to "edit", edit_user_registration_path  %>
+
+
+<%end%>
+ <p class="notice"><%= notice %></p>
+   <p class="alert"><%= alert %></p> 
+   <%= link_to 'Cars', cars_path %>
